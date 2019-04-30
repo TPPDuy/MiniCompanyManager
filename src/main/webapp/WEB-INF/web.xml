@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Home Department</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.IndexDeptServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Them Nhan Vien</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.CreateEmpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Chinh Sua Nhan Vien</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.EditEmpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Xoa Nhan Vien</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.DeleteEmpServlet</servlet-class>
+    </servlet>
+    <!--<servlet>
+        <servlet-name>Trang Chu Nhan Vien</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.IndexEmpServlet</servlet-class>
+    </servlet>-->
+    <servlet>
+        <servlet-name>Them Phong Ban</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.CreateDeptServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Cap Nhat Phong Ban</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.EditDeptServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Chi Tiet Phong Ban</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.DetailDeptServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Home Department</servlet-name>
+        <url-pattern>/trangchudept</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Them Nhan Vien</servlet-name>
+        <url-pattern>/taomoiemp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Chinh Sua Nhan Vien</servlet-name>
+        <url-pattern>/capnhatemp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Xoa Nhan Vien</servlet-name>
+        <url-pattern>/xoaemp</url-pattern>
+    </servlet-mapping>
+    <!--<servlet-mapping>
+        <servlet-name>Trang Chu Nhan Vien</servlet-name>
+        <url-pattern>/trangchuemp</url-pattern>
+    </servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>Them Phong Ban</servlet-name>
+        <url-pattern>/taomoidept</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cap Nhat Phong Ban</servlet-name>
+        <url-pattern>/capnhatdept</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Chi Tiet Phong Ban</servlet-name>
+        <url-pattern>/chitietdept</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
