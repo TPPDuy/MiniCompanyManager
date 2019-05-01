@@ -7,6 +7,7 @@
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <class>com.sam.qlphongban.dto.Department</class>
         <class>com.sam.qlphongban.dto.Employee</class>
+        <class>com.sam.qlphongban.dto.Project</class>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/qlphongbandb"/>

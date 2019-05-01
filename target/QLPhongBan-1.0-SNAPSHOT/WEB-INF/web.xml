@@ -16,10 +16,10 @@
         <servlet-name>Xoa Nhan Vien</servlet-name>
         <servlet-class>com.sam.qlphongban.bus.DeleteEmpServlet</servlet-class>
     </servlet>
-    <!--<servlet>
+    <servlet>
         <servlet-name>Trang Chu Nhan Vien</servlet-name>
         <servlet-class>com.sam.qlphongban.bus.IndexEmpServlet</servlet-class>
-    </servlet>-->
+    </servlet>
     <servlet>
         <servlet-name>Them Phong Ban</servlet-name>
         <servlet-class>com.sam.qlphongban.bus.CreateDeptServlet</servlet-class>
@@ -31,6 +31,26 @@
     <servlet>
         <servlet-name>Chi Tiet Phong Ban</servlet-name>
         <servlet-class>com.sam.qlphongban.bus.DetailDeptServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Home Project</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.IndexProjectServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Them Project</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.CreateProjectServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Chinh Sua Project</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.EditProjectServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Chi Tiet Project</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.DetailProjectServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Chi Tiet Nhan Vien</servlet-name>
+        <servlet-class>com.sam.qlphongban.bus.DetailEmp</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Home Department</servlet-name>
@@ -48,10 +68,10 @@
         <servlet-name>Xoa Nhan Vien</servlet-name>
         <url-pattern>/xoaemp</url-pattern>
     </servlet-mapping>
-    <!--<servlet-mapping>
+    <servlet-mapping>
         <servlet-name>Trang Chu Nhan Vien</servlet-name>
         <url-pattern>/trangchuemp</url-pattern>
-    </servlet-mapping>-->
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Them Phong Ban</servlet-name>
         <url-pattern>/taomoidept</url-pattern>
@@ -63,6 +83,26 @@
     <servlet-mapping>
         <servlet-name>Chi Tiet Phong Ban</servlet-name>
         <url-pattern>/chitietdept</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Home Project</servlet-name>
+        <url-pattern>/trangchuproject</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Them Project</servlet-name>
+        <url-pattern>/taomoiproject</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Chinh Sua Project</servlet-name>
+        <url-pattern>/capnhatproject</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Chi Tiet Project</servlet-name>
+        <url-pattern>/chitietproject</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Chi Tiet Nhan Vien</servlet-name>
+        <url-pattern>/chitietemp</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

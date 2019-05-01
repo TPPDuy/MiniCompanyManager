@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>THÊM NHÂN VIÊN</h1>
-        <form action="" metho="POST">
+        <form action="" method="POST">
             <div>
                 Tên: <input type="text" id="txtName" name="txtName">
             </div>
@@ -33,6 +33,6 @@
                 <button type="submit">Tạo mới</button>
             </div>
         </form>
-        <a href="/trangchuemp">Xem danh sách nhân viên</a>
+        <a href="trangchuemp">Xem danh sách nhân viên</a>
     </body>
 </html>

@@ -38,7 +38,7 @@ public class DeleteEmpServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("txtId"));
+        int id = Integer.parseInt(request.getParameter("id"));
         try{
             objectDao.delete(id);
             response.sendRedirect(request.getContextPath() + "/trangchuemp");

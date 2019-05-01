@@ -10,7 +10,6 @@ import com.sam.qlphongban.dao.EmployeeDAO;
 import com.sam.qlphongban.dto.Department;
 import com.sam.qlphongban.dto.Employee;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -28,21 +27,12 @@ public class DeleteDeptServlet extends HttpServlet {
     private EmployeeDAO objectDao = new EmployeeDAO();
     private DepartmentDAO objectObjectDao = new DepartmentDAO();
    
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-            RequestDispatcher rd = getServletContext().getRequestDispatcher("/views/department/deletedept.jsp");
-            rd.forward(request, response);
-    }
-
-   
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("txtId"));
+    private void doProcess(HttpServletRequest request, HttpServletResponse response)
+    {
+        int id = Integer.parseInt(request.getParameter("id"));
         try{
             Department department = objectObjectDao.read(id);
-            List<Employee> employees = objectDao.getByDepartment(id);
+            List<Employee> employees = objectDao.getByDepartment(department.getId());
             for(Employee e : employees)
                 objectDao.delete(e.getEid());
             objectObjectDao.delete(id);
@@ -52,6 +42,17 @@ public class DeleteDeptServlet extends HttpServlet {
             
         }
     }
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+            doProcess(request, response);
+    }
 
-    
+   
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+            doProcess(request, response);
+        }
+   
 }

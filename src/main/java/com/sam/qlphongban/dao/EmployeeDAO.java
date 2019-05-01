@@ -6,11 +6,15 @@
 package com.sam.qlphongban.dao;
 
 
+import com.sam.qlphongban.dto.Department;
 import com.sam.qlphongban.dto.Employee;
+import java.util.ArrayList;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.List;
+import org.hibernate.Query;
+
 
 public class EmployeeDAO
 {
@@ -26,7 +30,7 @@ public class EmployeeDAO
     {
         em.clear();
         em.getTransaction().begin();
-        List<Employee> result = em.createQuery("from employees", Employee.class).getResultList();
+        List<Employee> result = em.createQuery("from Employee", Employee.class).getResultList();
         em.getTransaction().commit();
         return result;
     }
@@ -45,10 +49,11 @@ public class EmployeeDAO
     
     public List<Employee> getByDepartment(int id)
     {
-        em.clear();
-        em.getTransaction().begin();
-        List<Employee> result = em.createNativeQuery(String.format("from employees where did = %d", id), Employee.class).getResultList();
-        em.getTransaction().commit();
+        List<Employee> result = new ArrayList<>();
+        List<Employee> employees = readAll();
+        for(Employee e : employees)
+            if(e.getDepartment().getId() == id)
+                result.add(e);
         return result;
     }
     

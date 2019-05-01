@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page language="java" %>
+<%@page language="java"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>THÊM PHÒNG BAN</h1>
-        <form action="" metho="POST">
+        <form action="" method="POST">
             <div>
                 Tên phòng ban: <input type="text" id="txtName" name="txtName">
             </div>
@@ -17,6 +17,6 @@
                 <button type="submit">Tạo mới</button>
             </div>
         </form>
-        <a href="/trangchudept">Xem danh sách phòng ban</a>
+        <a href="trangchudept">Xem danh sách phòng ban</a>
     </body>
 </html>

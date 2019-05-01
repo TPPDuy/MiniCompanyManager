@@ -25,6 +25,7 @@
                 <a href="capnhatemp?id=${row.eid}">Chỉnh Sửa Nhân Viên</a>
                 <a href="xoaemp?id=${row.eid}">Xóa Nhân Viên</a>
             </td>
+            <br/>
         </c:forEach>
         <a href="taomoiemp">Thêm Nhân Viên</a>
     </body>

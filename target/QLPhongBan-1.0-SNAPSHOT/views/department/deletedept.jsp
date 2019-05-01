@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>XÓA PHÒNG BAN</h1>
-        <form action="" metho="POST">
+        <form action="" method="POST">
             <div>
                 Nhập id phòng ban: <input type="text" id="txtId" name="txtId">
             </div>
@@ -17,6 +17,6 @@
                 <button type="submit">Xóa Phòng Ban</button>
             </div>
         </form>
-        <a href="/trangchudept">Xem danh sách phòng ban</a>
+        <a href="trangchudept">Xem danh sách phòng ban</a>
     </body>
 </html>

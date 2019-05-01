@@ -20,7 +20,6 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Admin
  */
-@WebServlet("/trangchuemp")
 public class IndexEmpServlet extends HttpServlet {
     private EmployeeDAO objectDao = new EmployeeDAO();
     

@@ -26,6 +26,9 @@ public class EditDeptServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+            int id = Integer.parseInt(request.getParameter("id"));
+            Department item = objectObjectDao.read(id);
+            request.setAttribute("model", item);
             RequestDispatcher rd = getServletContext().getRequestDispatcher("/views/department/editdept.jsp");
             rd.forward(request, response);
     }
@@ -34,7 +37,7 @@ public class EditDeptServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("txtId"));
+        int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("txtName");
         Department dept = objectObjectDao.read(id);
         dept.setName(name);

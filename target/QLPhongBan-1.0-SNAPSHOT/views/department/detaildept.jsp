@@ -5,12 +5,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Edit Employee</title>
+        <title>Detail Department</title>
     </head>
     <body>
         <h1>CHI TIẾT PHÒNG BAN</h1>
             <div>
-                Tên: <span id="txtName" name="txtName">${requestScope.model.name}"</span>
+                Tên: <input disabled id="txtName" name="txtName" value="${requestScope.model.name}">
             </div>
             <p>Danh sách nhân viên: </p>
             <div>
@@ -21,6 +21,6 @@
                     </tr>
                 </c:forEach>
             </div>
-        <a href="/trangchudept">Xem danh sách phòng ban</a>
+        <a href="trangchudept">Xem danh sách phòng ban</a>
     </body>
 </html>

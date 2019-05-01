@@ -46,7 +46,7 @@ public class EditEmpServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("txtId"));
+        int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("txtName");
         double salary = Double.parseDouble(request.getParameter("txtSalary"));
         String deg = request.getParameter("txtDeg");

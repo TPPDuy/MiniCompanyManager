@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>CHỈNH SỬA THÔNG TIN NHÂN VIÊN</h1>
-        <form action="" metho="POST">
+        <form action="" method="POST">
             <div>
                 Tên: <input type="text" id="txtName" name="txtName" value="${requestScope.model.ename}">
             </div>
@@ -33,6 +33,6 @@
                 <button type="submit">Chỉnh sửa</button>
             </div>
         </form>
-        <a href="/trangchuemp">Xem danh sách nhân viên</a>
+        <a href="trangchuemp">Xem danh sách nhân viên</a>
     </body>
 </html>

@@ -11,8 +11,6 @@ import com.sam.qlphongban.dto.Department;
 import com.sam.qlphongban.dto.Employee;
 import java.io.IOException;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -50,7 +48,7 @@ public class CreateEmpServlet extends HttpServlet {
            String name = request.getParameter("txtName");
            double salary = Double.parseDouble(request.getParameter("txtSalary"));
            String deg = request.getParameter("txtDeg");
-           int deptId = Integer.parseInt(request.getParameter("txtDeptId"));
+           int deptId = Integer.parseInt(request.getParameter("txtDepartId"));
            Department dept = objectObjectDao.read(deptId);
            Employee item = new Employee(name, salary, deg, dept);
            objectDao.create(item);
