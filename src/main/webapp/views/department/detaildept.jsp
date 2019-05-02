@@ -16,9 +16,12 @@
             <div>
                 <c:forEach var="row" items="${requestScope.listItem}">
                     <tr>
-                        <td><c:out value ="${row.id}"/></td>
-                        <td><c:out value ="${row.name}"/></td>
+                        <td><c:out value ="${row.eid}"/></td>
+                        <td><c:out value ="${row.ename}"/></td>
+                        <td><c:out value ="${row.salary}"/></td>
+                        <td><c:out value ="${row.deg}"/></td>
                     </tr>
+                    <br/>
                 </c:forEach>
             </div>
         <a href="trangchudept">Xem danh sách phòng ban</a>
