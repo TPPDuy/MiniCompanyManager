@@ -6,14 +6,12 @@
 package com.sam.qlphongban.dao;
 
 
-import com.sam.qlphongban.dto.Department;
 import com.sam.qlphongban.dto.Employee;
 import java.util.ArrayList;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.List;
-import org.hibernate.Query;
 
 
 public class EmployeeDAO

@@ -31,13 +31,10 @@ public class Employee implements Serializable {
         this.deg = deg;
         this.department = department;
     }
-        
     public Employee()
     {
         
     }
-    
-    
     public int getEid() {
         return eid;
     }

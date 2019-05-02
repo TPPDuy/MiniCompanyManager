@@ -10,18 +10,21 @@
     <body>
         <h1>CHI TIẾT PHÒNG BAN</h1>
             <div>
-                Tên: <input disabled id="txtName" name="txtName" value="${requestScope.model.name}">
+                Tên: <input readonly id="txtName" name="txtName" value="${requestScope.model.name}">
             </div>
             <p>Danh sách nhân viên: </p>
             <div>
                 <c:forEach var="row" items="${requestScope.listItem}">
                     <tr>
-                        <td><c:out value ="${row.eid}"/></td>
-                        <td><c:out value ="${row.ename}"/></td>
-                        <td><c:out value ="${row.salary}"/></td>
-                        <td><c:out value ="${row.deg}"/></td>
+                        <td>Mã nhân viên: <c:out value ="${row.eid}"/></td>
+                        <br/>
+                        <td>Tên nhân viên: <c:out value ="${row.ename}"/></td>
+                        <br/>
+                        <td>Lương: <c:out value ="${row.salary}"/></td>
+                        <br/>
+                        <td>Cấp bậc: <c:out value ="${row.deg}"/></td>
                     </tr>
-                    <br/>
+                    <br>-----------------------------------------------</br>
                 </c:forEach>
             </div>
         <a href="trangchudept">Xem danh sách phòng ban</a>

@@ -11,10 +11,10 @@ D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\bus\IndexEmpServl
 D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\bus\EditDeptServlet.java
 D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\bus\IndexDeptServlet.java
 D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\dto\Employee.java
-D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\bus\DetailEmp.java
 D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\dto\Project.java
 D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\bus\DeleteEmpServlet.java
 D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\dao\ProjectDAO.java
+D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\bus\DetailEmpServlet.java
 D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\dto\Department.java
 D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\bus\CreateEmpServlet.java
 D:\Duy\Programming\QLPhongBan\src\main\java\com\sam\qlphongban\bus\DetailProjectServlet.java

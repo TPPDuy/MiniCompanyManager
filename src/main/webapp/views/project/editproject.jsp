@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>CHỈNH SỬA THÔNG TIN DỰ ÁN</h1>
-        <form action="" metho="POST">
+        <form action="" method="POST">
             <div>
                 Tên: <input type="text" id="txtName" name="txtName" value="${requestScope.model.name}">
             </div>

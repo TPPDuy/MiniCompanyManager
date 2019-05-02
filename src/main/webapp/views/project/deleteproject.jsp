@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>XÓA DỰ ÁN</h1>
-        <form action="" metho="POST">
+        <form action="" method="POST">
             <div>
                 Nhập id dự án: <input type="text" id="txtId" name="txtId">
             </div>

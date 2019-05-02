@@ -14,7 +14,7 @@
                 Tên: <input type="text" id="txtName" name="txtName" value="${requestScope.model.ename}">
             </div>
             <div>
-                Lương: <input type="text" id="txtSalary" name="txtSalary" value="${requestScope.model.salary}">
+                Lương: <input type="number" id="txtSalary" name="txtSalary" value="${requestScope.model.salary}">
             </div>
             <div>
                 Cấp bậc: <input type="text" id="txtDeg" name="txtDeg" value="${requestScope.model.deg}">

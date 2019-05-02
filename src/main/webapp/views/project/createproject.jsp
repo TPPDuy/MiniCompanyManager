@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>THÊM DỰ ÁN</h1>
-        <form action="" metho="POST">
+        <form action="" method="POST">
             <div>
                 Tên: <input type="text" id="txtName" name="txtName">
             </div>

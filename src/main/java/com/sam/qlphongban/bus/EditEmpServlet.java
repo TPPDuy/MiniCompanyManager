@@ -24,7 +24,6 @@ import javax.servlet.http.HttpServletResponse;
 public class EditEmpServlet extends HttpServlet {
     private EmployeeDAO objectDao = new EmployeeDAO();
     private DepartmentDAO objectObjectDao = new DepartmentDAO();
-    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -50,7 +49,7 @@ public class EditEmpServlet extends HttpServlet {
         String name = request.getParameter("txtName");
         double salary = Double.parseDouble(request.getParameter("txtSalary"));
         String deg = request.getParameter("txtDeg");
-        int deptId = Integer.parseInt(request.getParameter("txtDeptId"));
+        int deptId = Integer.parseInt(request.getParameter("txtDepartId"));
         Department dept = objectObjectDao.read(deptId);
         try{
             Employee item = new Employee(name, salary, deg, dept);

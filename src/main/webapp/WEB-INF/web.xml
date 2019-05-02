@@ -50,7 +50,7 @@
     </servlet>
     <servlet>
         <servlet-name>Chi Tiet Nhan Vien</servlet-name>
-        <servlet-class>com.sam.qlphongban.bus.DetailEmp</servlet-class>
+        <servlet-class>com.sam.qlphongban.bus.DetailEmpServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Home Department</servlet-name>
